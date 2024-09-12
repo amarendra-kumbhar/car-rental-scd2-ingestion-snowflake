@@ -4,12 +4,18 @@
 This project aims to build a batch ingestion pipeline for car rental data with SCD2 merge logic in Snowflake. 
 The pipeline reads daily car rental and customer data from Google Storage, performs transformations using PySpark and updates the data in Snowflake using Airflow.
 
+### Workflow
+Here is a dynamic representation of the data processing workflow:
+
+![Workflow Animation](docs/workflow_animation.gif)
+
 ### Tech Stack
 - **Python**
 - **PySpark**
 - **GCP Dataproc**
 - **Airflow**
 - **Snowflake**
+
 
 ### Project Overview
 1. **Static Table Creation:** Create `location_dim`, `date_dim`, `car_dim` static tables in Snowflake.
